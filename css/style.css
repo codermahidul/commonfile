@@ -33,5 +33,207 @@ a {
     margin: 0;
     padding: 0;
 }
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Color */
+:root {
+    --primary: #1266e3;
+    --secondary: #0fca98;
+    --white: #ffffff;
+    --black: #1e1b39;
+    /* Font */
+    --title:'Roboto', sans-serif;
+    --paragrap:'Open Sans', sans-serif;
+  }
+
+/* Common CSS END */
+
+/* ===========================
+        TOP MENU START
+=============================*/
+#topmenu{
+    width: 100%;
+    height: 50px;
+    background: var(--black);
+}
+
+#topmenu .left_top_menu span{
+    color: var(--white);
+    font-size: 14px;
+    font-family: var(--paragrap);
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+#topmenu .left_top_menu span i{
+    margin-right: 5px;
+}
+
+#topmenu .left_top_menu span a{
+    color: var(--white);
+}
+
+#topmenu .right_top_menu{
+    width: 100%;
+}
+
+#topmenu .right_top_menu .social_links{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+#topmenu .right_top_menu .social_links li{
+    margin-right: 15px;
+    line-height: 50px;
+}
+
+#topmenu .right_top_menu .social_links li a{
+    color: var(--white);
+    transition: all linear .3s;
+}
+
+#topmenu .right_top_menu .social_links li a:hover{
+    color: var(--primary);
+}
 
 
+/* ===========================
+        TOP MENU END
+=============================*/
+
+/* ===========================
+        MAIN MENU START
+=============================*/
+
+.navbar{
+    height: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar .navbar-brand img{
+    width: 120px;
+}
+
+.navbar .navbar-nav{
+    margin-left: 60px;
+}
+
+.navbar .navbar-nav .nav-link.active{
+    color: var(--secondary);
+}
+
+.navbar .navbar-nav .nav-link{
+    font-family: var(--title);
+    font-size: 16px;
+    color: var(--black);
+    transition: all linear .3s;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--secondary);
+}
+
+.user_shortcut ul li{
+    margin-left: 15px;
+    transition: all linear .3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} 
+
+.user_shortcut ul li a{
+    padding: 15px 18px;
+    color: var(--black);
+    transition: all linear .3s;
+} 
+
+.user_shortcut ul li:hover{
+    background: var(--secondary);
+}
+
+.user_shortcut ul li:hover a{
+    color: var(--white);
+}
+
+.user_shortcut ul li a:first-child{
+    position: relative;
+}
+
+.user_shortcut ul li a span{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-weight: 700;
+}
+
+.user_shortcut ul li:nth-child(2){
+    position: relative;
+    cursor: pointer;
+}
+
+.user_shortcut .search {
+    position: absolute;
+    left: -260px;
+    bottom: -99px;
+    background-color: var(--white);
+    display: flex;
+    padding: 20px 20px;
+    border-top: 3px solid var(--secondary);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: var(--paragrap);
+    z-index: 999;
+    /* display: none; */
+}
+
+.user_shortcut .search::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 18.5px solid transparent;
+    border-right: 18.5px solid transparent;
+    border-bottom: 13px solid var(--secondary);
+    right: 0;
+    top: -15px;
+}
+
+.user_shortcut .search input{
+    padding: 5px 10px;
+    border: 1px solid var(--secondary);
+}
+
+.user_shortcut .search button{
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    padding: 0 5px;
+}
+
+.fixed_menu{
+    width: 100%;
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/* ===========================
+        MAIN MENU END
+=============================*/
+
+/* ===========================
+        BANNER START
+=============================*/
+#banner{
+    width: 100%;
+    height: 700px;
+    background: url('/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ===========================
+        BANNER END
+=============================*/
